@@ -36,6 +36,35 @@ limitations under the License.
    --scrollbar-border: var(--primary);
 }
 
+  /* Message background */
+  .p-message_pane .c-message_list.c-virtual_list--scrollbar>.c-scrollbar__hider:before, .p-message_pane .c-message_list:not(.c-virtual_list--scrollbar):before {
+    background: var(--background-elevated)
+  }
+  .c-scrollbar__bar {
+    background: rgba(255,255,255,.15);
+  }
+  .c-scrollbar__hider {
+    background: transparent !important;
+  }
+
+  /* Message text color */
+  .p-message_pane__foreword__description, .p-message_pane__limited_history_alert {
+    color: var(--text-bright);
+  }
+  .c-message--focus:not(.c-message--highlight):not(.c-message--standalone):not(.c-message--pinned):not(.c-message--ephemeral):not(.c-message--custom_response):not(.c-message--starred):not(.c-message--sli_highlight), .c-message--hover:not(.c-message--highlight):not(.c-message--standalone):not(.c-message--pinned):not(.c-message--ephemeral):not(.c-message--custom_response):not(.c-message--starred):not(.c-message--sli_highlight), .c-message:hover:not(.c-message--highlight):not(.c-message--standalone):not(.c-message--pinned):not(.c-message--ephemeral):not(.c-message--custom_response):not(.c-message--starred):not(.c-message--sli_highlight) {
+    background-color: var(--background-hover) !important;
+  }
+  .c-message__body {
+    color: var(--text);
+  }
+  .c-message__sender_link {
+    color: var(--text-bright) !important;
+  }
+  .ql-placeholder {
+    color: unset !important;
+  }
+
+
 h1, h2, h3, h4 {
   color: var(--text);
 }
